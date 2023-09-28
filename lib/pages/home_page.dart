@@ -27,24 +27,25 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(8),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Padding(
-                padding: EdgeInsets.only(bottom: screenSize.height * 0.02),
-                child: Text(
-                  sportsList[_currentSportIndex].name,
-                  style: Theme.of(context).textTheme.bodyLarge,
-                ),
+        minimum: EdgeInsets.symmetric(
+          vertical: screenSize.height * 0.015,
+          horizontal: screenSize.width * 0.04,
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Padding(
+              padding: EdgeInsets.only(bottom: screenSize.height * 0.02),
+              child: Text(
+                sportsList[_currentSportIndex].name,
+                style: Theme.of(context).textTheme.bodyLarge,
               ),
-              Text(
-                sportsList[_currentSportIndex].description,
-                style: Theme.of(context).textTheme.bodyMedium,
-              ),
-            ],
-          ),
+            ),
+            Text(
+              sportsList[_currentSportIndex].description,
+              style: Theme.of(context).textTheme.bodyMedium,
+            ),
+          ],
         ),
       ),
     );
