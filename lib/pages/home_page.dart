@@ -28,8 +28,8 @@ class _HomePageState extends State<HomePage> {
       ),
       body: SafeArea(
         minimum: EdgeInsets.symmetric(
-          vertical: screenSize.height * 0.015,
-          horizontal: screenSize.width * 0.04,
+          vertical: screenSize.height * 0.012,
+          horizontal: screenSize.width * 0.03,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
