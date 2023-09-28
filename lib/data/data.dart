@@ -1,4 +1,4 @@
-import 'models/sport_model.dart';
+import '../models/sport_model.dart';
 
 final List<Sport> sportsList = [
   Sport(
