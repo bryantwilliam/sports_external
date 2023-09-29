@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sports_external/data/data.dart';
+import 'package:sports_external/data/sports_list.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
